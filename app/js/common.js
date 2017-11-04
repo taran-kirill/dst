@@ -165,7 +165,7 @@ $(window).bind('resize orientationchange', function() {
 });
 
 var adjustMenu = function() {
-	if (ww < 950) {
+	if (ww < 1050) {
 		$(".togMenu").css("display", "inline-block");
 		if (!$(".togMenu").hasClass("active")) {
 			$(".nav-bottom-mobile").hide();
@@ -179,7 +179,7 @@ var adjustMenu = function() {
 			$(this).parent("li").toggleClass("hover");
 		});
 	} 
-	else if (ww >= 950) {
+	else if (ww >= 1050) {
 		$(".togMenu").css("display", "none");
 		$(".nav-bottom-mobile").hide();
 		$(".nav-bottom-mobile li").removeClass("hover");
