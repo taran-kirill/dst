@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>О компании</title>
+	<meta name="description" content="DST - главная" />
+	<!-- Style -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="jquery.mCustomScrollbar.css">
+</head>
+
+<body>
+
+	<main class="main-ihner">
+		<section class="section-404">
+			<div class="container">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				<div class="block-info-404">
+					<div class="l-block">
+						<span class="number">404</span>
+					</div>
+					<div class="r-block">
+						<span class="page-not-found">Страница не найдена</span>
+						<span class="try-search">Попробуйте начать поиск с <a href="#" class="homepage-link">главной страницы</a>.</span>
+					</div>
+				</div>
+				<div class="block-column">
+					<div class="left">
+						<div class="all-address">
+							<div class="left-block">
+								<span class="phone-number"><a href="tel:+7(499)458 21 98">+7(499)458 21 98</a></span>
+								<span class="email"><a href="mailto:info@dst.com">info@dst.com</a></span>
+								<div class="clock"><span>Время работы офиса: c 10:00 до 20:00</span></div>
+							</div>
+							<div class="right-block">
+								<div class="block-address">
+									<span class="name-address">Адрес офиса</span>
+									<span class="address">г.Москва, ул.Ленина 15, кор. 1</span>
+								</div>
+								<div class="block-address">
+									<span class="name-address">Адрес офиса</span>
+									<span class="adress">г.Москва, ул.Ленина 15, кор. 1</span>
+								</div>
+								<div class="block-address">
+									<span class="name-address">Адрес офиса</span>
+									<span class="adress">г.Москва, ул.Ленина 15, кор. 1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- ______________________________________________________SCRIPTS______________________________________________________-->
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHjKKplj0WJbUaTwFFZeEZLn23e6waT-k&callback=initMap"
+    async defer></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+	<script src="js/other.js"></script>
+	<script>
+		(function($){
+			$(window).on("load",function(){				
+				$.mCustomScrollbar.defaults.theme="inset"; //set "inset" as the default theme
+				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+				
+				$(".outer,.nested").mCustomScrollbar();				
+				$(".inner.horizontal-images").mCustomScrollbar({
+					axis:"x",
+					advanced:{autoExpandHorizontalScroll:true}
+				});				
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>
