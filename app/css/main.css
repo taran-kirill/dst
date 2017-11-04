@@ -2958,7 +2958,7 @@ input[type="text"]::-ms-reveal {
     position: relative; }
   .main #sidebar-menu {
     position: fixed;
-    z-index: 10;
+    z-index: 51;
     top: 50%;
     left: 0;
     color: #FFF;
