@@ -653,7 +653,7 @@ input[type="text"]::-ms-reveal {
         color: #fff;
         position: relative;  
     }
-    #sidebar-menu {position: fixed;z-index: 3; top: 50%; left: 0;  color: #FFF; border-radius: 0 8px 8px 0;}
+    #sidebar-menu {position: fixed;z-index: 10; top: 50%; left: 0;  color: #FFF; border-radius: 0 8px 8px 0;}
     #sidebar-menu li {
         position: relative;
         cursor: pointer;
