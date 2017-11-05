@@ -3,13 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DST - главная</title>
-	<meta name="description" content="DST - главная" />
+	<title>DST - Фотогалерея</title>
+	<meta name="description" content="DST - Фотогалерея" />
 	<!-- Style -->
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="jquery.mCustomScrollbar.css">
 </head>
 
 <body>
@@ -2034,19 +2033,5 @@
     async defer></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 	<script src="js/other.js"></script>
-	<script>
-		(function($){
-			$(window).on("load",function(){				
-				$.mCustomScrollbar.defaults.theme="inset"; //set "inset" as the default theme
-				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
-				
-				$(".outer,.nested").mCustomScrollbar();				
-				$(".inner.horizontal-images").mCustomScrollbar({
-					axis:"x",
-					advanced:{autoExpandHorizontalScroll:true}
-				});				
-			});
-		})(jQuery);
-	</script>
 </body>
 </html>

@@ -123,9 +123,9 @@ $text-color: #5e696f;
     box-sizing: border-box;
 }
 
-// html {
-// 	height: 100%;
-// }
+html {
+	min-height: 100%;
+}
 
 body {
    min-height: 100%;
@@ -1588,9 +1588,10 @@ input[type="text"]::-ms-reveal {
     .section-404 {
         padding: 0 100px;
         background: url(../img/404.jpg) no-repeat;
-        height: 100%;
+        height: 100vh;
         background-size: cover;
         background-position: 50%;
+        overflow: hidden;
         .container {
             .logo {
                 padding-top: 85px;
@@ -4852,7 +4853,7 @@ input[type="text"]::-ms-reveal {
                             .looks {
                                 margin-right: 10px;
                                 position: absolute;
-                                left: 30%;
+                                left: 35%;
                                 &:before {
                                     content: "\f086";
                                     padding-right: 5px;
@@ -4861,7 +4862,7 @@ input[type="text"]::-ms-reveal {
                             }
                             .comments {
                                 position: absolute;
-                                left: 44%;
+                                left: 52%;
                                 &:before {
                                     content: "\f06e";
                                     padding-right: 5px;
@@ -4938,6 +4939,9 @@ input[type="text"]::-ms-reveal {
                 .right {
                     max-width: 370px;
                     width: 100%;
+                    .button-list {
+                        display: none;
+                    }
                     .list {
                         padding: 25px 17px;
                         margin-bottom: 50px;
@@ -7655,7 +7659,51 @@ input[type="text"]::-ms-reveal {
                     padding: 0 15px;
                 }
             }
-        }   
+        }
+        //______________________________________________________blog-section_______________________________________________________________
+        .blog-section {
+            .container {
+                .top-block {
+                    .right-block {
+                        .preview-blog1 {
+                            .cont {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //______________________________________________________block-category-ihner_______________________________________________________
+        .block-category-ihner {
+            .container {
+                .block-column {
+                    .left {
+                        .preview-blog2 {
+                            .cont {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+        //______________________________________________________last-blog__________________________________________________________________
+        .last-blog {
+            .container {
+                .swiper-container-last {;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .preview-blog2 {
+                                .cont {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -9268,6 +9316,78 @@ input[type="text"]::-ms-reveal {
             }
         }
         .main-ihner {
+            // ______________________________________________________product_______________________________________________________________ 
+            .product {
+               .container {
+                   .container-block {
+                       .aside-right {
+                           .price-block {
+                               .price {
+                                font-size: 34px;
+                                color: #15aeeb;
+                                font-weight: 700;
+                                display: block;
+                                line-height: 34px;
+                                margin-bottom: 30px;
+                               }
+                           }
+                       }
+                   }
+               }
+            }  
+            // ______________________________________________________last-blog_____________________________________________________________ 
+            .last-blog {
+               padding: 50px 0;
+               .container {
+                    h3 {
+                        font-size: 26px;
+                    }
+                    .swiper-container-last {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .preview-blog2 {
+                                    .blog-link-preview {
+                                        font-size: 16px;
+                                        padding: 5px 15px;
+                                    }
+                                    .stick {
+                                        line-height: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+               }
+            }
+            // ______________________________________________________home-category_________________________________________________________
+            .home-category {
+                .container {
+                    .block-category {
+                        flex-direction: column;
+                        align-items: center; 
+                        .category-home {
+                            width: 100%;
+                            max-width: 570px;
+                            padding-bottom: 25px;
+                            .info {
+                                flex-direction: column;
+                                padding-bottom: 15px;
+                                .act {
+                                    .button-view {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        right: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .button-catalog {
+                        padding: 10px 0;
+                    }
+                }
+            }
             // ______________________________________________________our-category_________________________________________________________
             .our-category {
                 .container {
@@ -9336,140 +9456,7 @@ input[type="text"]::-ms-reveal {
                         }
                     }
                 }
-            }
-            // ______________________________________________________section-comments______________________________________________________ 
-            .section-comments {
-                .container {
-                    .head {
-                        flex-direction: column;
-                        text-align: center;
-                        .value-comments {
-                            margin-bottom: 25px;
-                        }
-                    }   
-                    .comments {
-                        .text {
-                            display: flex;
-                            flex-direction: column;
-                            .button-reply {
-                                a {
-                                    display: inline-block;
-                                }
-                            }
-                            .button-like {
-                                margin-top: 20px;
-                            }
-                        }
-                    }
-                    .comments-reply {
-                        .block-comments {
-                            .text {
-                                display: flex;
-                                flex-direction: column;
-                                .button-reply {
-                                    a {
-                                        display: inline-block;
-                                    }
-                                }
-                                .button-like {
-                                    margin-top: 20px;
-                                    a {
-                                        cursor: pointer;
-                                        &:visited i {
-                                        }
-                                    }
-                                }
-                            }
-                            .reply-comments {
-                                .text {
-                                    display: flex;
-                                    flex-direction: column;
-                                    .button-reply {
-                                        a {
-                                            display: inline-block;
-                                        }
-                                    }
-                                    .button-like {
-                                        margin-top: 20px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            // ______________________________________________________home-category_________________________________________________________
-            .home-category {
-                .container {
-                    .block-category {
-                        flex-direction: column;
-                        align-items: center; 
-                        .category-home {
-                            width: 100%;
-                            max-width: 570px;
-                            padding-bottom: 25px;
-                            .info {
-                                flex-direction: column;
-                                padding-bottom: 15px;
-                                .act {
-                                    .button-view {
-                                        position: absolute;
-                                        left: 0;
-                                        top: 0;
-                                        right: auto;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .button-catalog {
-                        padding: 10px 0;
-                    }
-                }
-            }
-            // ______________________________________________________product_______________________________________________________________ 
-            .product {
-        	   .container {
-        	   	   .container-block {
-        	   	       .aside-right {
-        	   	           .price-block {
-        	   	               .price {
-        	   	               	font-size: 34px;
-        	   	               	color: #15aeeb;
-        	   	               	font-weight: 700;
-        	   	               	display: block;
-        	   	               	line-height: 34px;
-        	   	               	margin-bottom: 30px;
-        	   	               }
-        	   	           }
-        	   	       }
-        	   	   }
-        	   }
-            }
-            // ______________________________________________________last-blog_____________________________________________________________ 
-            .last-blog {
-        	   padding: 50px 0;
-        	   .container {
-        		    h3 {
-        		    	font-size: 26px;
-        		    }
-        		    .swiper-container-last {
-        		    	.swiper-wrapper {
-        		    		.swiper-slide {
-        		    			.preview-blog2 {
-        		    				.blog-link-preview {
-        		    					font-size: 16px;
-        		    					padding: 5px 15px;
-        		    				}
-        		    				.stick {
-        		    					line-height: 15px;
-        		    				}
-        		    			}
-        		    		}
-        		    	}
-        		    }
-        	   }
-            }        
+            }    
         }
     }
     .footer {
